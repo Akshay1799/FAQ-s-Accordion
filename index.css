@@ -1,0 +1,155 @@
+@font-face {
+    font-family: MyFont;
+    src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(275, 100%, 97%);
+    background-image: url("/assets/images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    background-attachment: fixed;
+    line-height: 1.6rem;
+    font-family: MyFont;
+}
+
+h1 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-left: 8px;
+    font-weight: 700;
+}
+
+icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.header {
+    display: flex;
+    /* padding-left: -10px; */
+    margin-bottom: 15px;
+}
+
+.accordion {
+    width: 600px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px 35px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px hsl(0, 58%, 96%);
+
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    margin-bottom: 10px;
+    border-bottom: 1px solid hsl(210, 10%, 92%);
+}
+
+h3 {
+    color: hsl(292, 42%, 14%);
+    margin-top: 5px;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+.plus-icon {
+    float: right;
+    height: 30px;
+    width: 30px;
+    margin-left: 15px;
+    margin-top: -5px;
+}
+
+p {
+    padding-bottom: 25px;
+    color: hsl(292, 16%, 49%);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.box p {
+    display: none;
+}
+
+.box.active p {
+    display: block;
+    transition: display 1s ease;
+}
+
+@media (max-width: 375px) {
+    body {
+        padding: 0 15px;
+    }
+
+    .accordion {
+        width: 100%;
+        padding: 15px 20px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 18px;
+        padding-bottom: 15px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .plus-icon {
+        height: 25px;
+        width: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .accordion {
+        width: 90%; 
+        padding: 15px 25px; 
+    }
+    h1 {
+        font-size: 24px; 
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px; 
+    }
+    .plus-icon {
+        height: 28px; 
+        width: 28px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .accordion {
+        width: 800px;/
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 18px;
+    }
+}
