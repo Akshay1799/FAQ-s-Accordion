@@ -1,2 +1,2 @@
-Here, In this repository I have built a Toggle FAQ's Accordion, Which was a challenge given by Frontend Mentor and code by me.
-To build this project I have used HTML, CSS and a little bit of javaScript.
+Here, in this repository, I have built a Toggle FAQ Accordion, which was a challenge given by Frontend Mentor and coded by me.
+To build this project I have used HTML, CSS, and a little bit of javaScript.
